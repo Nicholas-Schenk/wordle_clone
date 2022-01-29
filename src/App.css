@@ -1,15 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .App {
   text-align: center;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.Row{
+  width: 100%;
+  display: block;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+h1{
+  position: relative;
+  display: inline-block;
+  font-family: 'Bebas Neue';
+  font-size: 4em;
+  color: #ffffff;
+  text-shadow: 0 0 0.0625em #ffffff,0 0 0.75em #f5f38e,  0 0 0.25em #ffa54b, 0 0 0.125em #fa536f;
+  animation: neon-animation 5s infinite alternate;
+}
+
+.para{
+  color: #f5f38e;
+  text-shadow: 0 0 0.0625em #ffffff,0 0 0.75em #f5f38e,  0 0 0.25em #ffa54b, 0 0 0.125em #fa536f;
+}
+
+
+
+@keyframes neon-animation {
+  0%{
+    color: white;
+  }
+  15%{
+    color: #fcfbb5;
+  }
+  100%{
+    color: #fcfbb5;
+  }
+}
+h1::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 250%;
+  height: 200%;
+  background: #fcbc7d;
+  transform: perspective(2em) rotateX(30deg);
+  filter: blur(2.75em);
+  animation: neon-shadow-animation 5s infinite alternate;
+  z-index: -1;
+}
+@keyframes neon-shadow-animation {
+  0%{
+    background: #f5f38e;
+    height: 225%;
+  }
+  15%{
+    background: #fcbc7d;
+    height: 250%;
+  }
+  100%{
+    background: #fcbc7d;
+    height: 250%;
   }
 }
 
@@ -36,3 +100,5 @@
     transform: rotate(360deg);
   }
 }
+
+

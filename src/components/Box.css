@@ -1,0 +1,9 @@
+.Box{
+    border: solid 1px white;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    position: relative;
+    top:0;
+    bottom: 0;
+}
