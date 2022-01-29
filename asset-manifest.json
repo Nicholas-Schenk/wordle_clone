@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rordle/static/css/main.f0624527.css",
+    "main.js": "/rordle/static/js/main.7d59bbcc.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/rordle/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/rordle/index.html",
+    "main.f0624527.css.map": "/rordle/static/css/main.f0624527.css.map",
+    "main.7d59bbcc.js.map": "/rordle/static/js/main.7d59bbcc.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/rordle/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0624527.css",
+    "static/js/main.7d59bbcc.js"
+  ]
+}
